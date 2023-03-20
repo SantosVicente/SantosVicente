@@ -1,5 +1,7 @@
-### Olá! Sou Vicente dos Santos 👋
+## Olá! Sou Vicente dos Santos 👋
 
-<a href="https://beacons.ai/santosvicente">Beacons</a>
-
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=SantosVicente&show_icons=true&count_private=true&theme=tokyonight)
+<div>
+	<a href="https://beacons.ai/santosvicente">
+	<img height="180em" src="https://github-readme-stats.vercel.app/api?username=SantosVicente&show_icons=true&count_private=true&theme=tokyonight" />
+	<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SantosVicente&layout=compact&langs_count=16&theme=tokyonight&https://github.com/SantosVicente/github-readme-stats" />
+</div>
