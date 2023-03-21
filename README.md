@@ -2,10 +2,12 @@
 
 <div>
 	<a href="https://beacons.ai/santosvicente">
-	<img height="190em" src="https://github-readme-stats.vercel.app/api?username=SantosVicente&show_icons=true&count_private=true&theme=tokyonight" />
+	<img height="190em" src="https://github-readme-stats.vercel.app/api?username=SantosVicente&show_icons=true&count_private=true&theme=tokyonight&hide=prs" />
 	<img height="190em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SantosVicente&layout=compact&langs_count=16&theme=tokyonight&https://github.com/SantosVicente/github-readme-stats" />
 </div>
+	
 <br />
+	
 <div>
 	<img align="center" alt="vs_c" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />    	
 	<img align="center" alt="vs_css" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
@@ -17,8 +19,10 @@
 	<img align="right" alt="vs-pic" height="170" style="border-radius:50px;" src="https://media.discordapp.net/attachments/948239438843101206/1087590593162641438/download20230302011432.png" />
 
 </div>
-	
-##
+
+<br />
+<hr />
+
 	
 <div>
 	<a href="mailto:santos.vicente@aluno.ifsp.edu.br" target="_blank">
