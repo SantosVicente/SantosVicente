@@ -14,7 +14,7 @@
         <img align="center" alt="vs_python" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
         <img align="center" alt="vs_react" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
 	<img align="center" alt="vs_nodejs" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-	<img align="right" alt="vs-pic" height="150" style="border-radius:50px;" src="https://media.discordapp.net/attachments/948239438843101206/1087590593162641438/download20230302011432.png" />
+	<img align="right" alt="vs-pic" height="170" style="border-radius:50px;" src="https://media.discordapp.net/attachments/948239438843101206/1087590593162641438/download20230302011432.png" />
 
 </div>
 	
