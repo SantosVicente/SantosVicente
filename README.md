@@ -19,7 +19,7 @@
 <hr />
 	
 <div>
-	<a href="mailto:santos.vicente@aluno.ifsp.edu.br">
-		<img align="center" target="_blank" alt="vs_nodejs" height="30" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+	<a href="mailto:santos.vicente@aluno.ifsp.edu.br" target="_blank">
+		<img align="center" alt="vs_nodejs" height="30" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 	</a>
 </div>
