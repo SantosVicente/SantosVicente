@@ -15,3 +15,11 @@
         <img align="center" alt="vs_react" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
 	<img align="center" alt="vs_nodejs" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
 </div>
+	
+<hr />
+	
+<div>
+	<a href="mailto:santos.vicente@aluno.ifsp.edu.br">
+		<img align="center" target="_blank" alt="vs_nodejs" height="30" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+	</a>
+</div>
