@@ -1,6 +1,10 @@
-## Olá! Sou Vicente dos Santos 👋
+## Olá Pessoal 👋
+
+Sou Vicente dos Santos Silva, sou um desenvolvedor front-end tentando aos poucos se tornar full-stack, e atualmente sou estudante da rede IFSP em que estou cursando um técnico em informática
+
 
 <div>
+	<br />
 	<a href="https://beacons.ai/santosvicente">
 	<img height="180em" src="https://github-readme-stats.vercel.app/api?username=SantosVicente&show_icons=true&count_private=true&theme=tokyonight&hide=prs" />
 	<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SantosVicente&layout=compact&langs_count=16&theme=tokyonight&https://github.com/SantosVicente/github-readme-stats" />
