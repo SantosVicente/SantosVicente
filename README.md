@@ -2,6 +2,8 @@
 
 Sou Vicente dos Santos Silva, sou um desenvolvedor front-end tentando aos poucos se tornar full-stack, e atualmente sou estudante da rede IFSP em que estou cursando um técnico em informática
 
+Desenvolvedor Front-end | React | React Native | Typescript
+
 
 <div>
 	<br />
