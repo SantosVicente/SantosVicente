@@ -1,9 +1,6 @@
-## Olá Pessoal 👋
+## Hi There 👋
 
-Sou Vicente dos Santos Silva, sou um desenvolvedor front-end tentando aos poucos se tornar full-stack, e atualmente sou estudante da rede IFSP em que estou cursando um técnico em informática
-
-Desenvolvedor Front-end | React | React Native | Typescript
-
+My name is Vicente Santos. I'm a IT student at IFSP (Federal Institute of Education, Science and Technology of São Paulo) from Campinas-SP. I'm a front-end developer slowly trying to become full-stack.
 
 <div>
 	<br />
