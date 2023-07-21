@@ -39,3 +39,5 @@ My name is Vicente Santos. I'm a IT student at IFSP (Federal Institute of Educat
 		<img align="center" alt="vs_linke" height="30" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
 	</a>
 </div>
+
+![Snake animation](https://github.com/SantosVicente/SantosVicente/blob/output/github-contribution-grid-snake.svg)
