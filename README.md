@@ -40,4 +40,4 @@ My name is Vicente Santos. I'm a IT student at IFSP (Federal Institute of Educat
 	</a>
 </div>
 
-![Snake animation](https://github.com/SantosVicente/SantosVicente/blob/output/github-contribution-grid-snake.svg)
+<!--![Snake animation](https://github.com/SantosVicente/SantosVicente/blob/output/github-contribution-grid-snake.svg)-->
