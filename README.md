@@ -4,9 +4,12 @@ My name is Vicente Santos. I'm a IT student at IFSP (Federal Institute of Educat
 
 <div>
 	<br />
+	<a href="https://beacons.ai/santosvicente"> 
+		<img height="180em" src="https://streak-stats.demolab.com/?user=DenverCoder1&theme=blueberry-duo" />
+	</a>
 	<a href="https://beacons.ai/santosvicente">
-	<img height="180em" src="https://github-readme-stats.vercel.app/api?username=SantosVicente&show_icons=true&count_private=true&theme=tokyonight&hide=prs" />
-	<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SantosVicente&layout=compact&langs_count=16&theme=tokyonight&https://github.com/SantosVicente/github-readme-stats" />
+		<img height="180em" width="auto" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SantosVicente&layout=compact&theme=tokyonight" />
+  	</a>
 </div>
 	
 <br />
