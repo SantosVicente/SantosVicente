@@ -25,7 +25,6 @@ My name is Vicente Santos. I'm a IT student at IFSP (Federal Institute of Educat
 - Java (SpringBoot)
 - C
 
-<br />
 <hr />
 
 	
