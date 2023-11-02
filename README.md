@@ -3,26 +3,17 @@
 My name is Vicente Santos. I'm a IT student at IFSP (Federal Institute of Education, Science and Technology of São Paulo) from Campinas-SP. I'm a front-end developer slowly trying to become full-stack.
 
 <div>
-	<br />
-	<a href="https://beacons.ai/santosvicente"> 
-		<img height="180em" src="https://streak-stats.demolab.com/?user=DenverCoder1&theme=blueberry-duo" />
-	</a>
-	<a href="https://beacons.ai/santosvicente">
-		<img height="180em" width="auto" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SantosVicente&layout=compact&theme=tokyonight" />
-  	</a>
+	<img width="100%" src="https://media.discordapp.net/attachments/1112939231061495869/1169457072539193374/DEVELOPER_FRONT-END.png?ex=655578c5&is=654303c5&hm=a0be2bb7c9f58a319949aa6c04e917e91778fe4e1544b3a1e89b22ffb4ae3a6f&=&width=1133&height=204" />
 </div>
+
+<br />
+
+<a href="https://beacons.ai/santosvicente">
+	<img height="180em" src="https://github-readme-stats.vercel.app/api?username=SantosVicente&show_icons=true&theme=radical&rank_icon=github" />	
+	<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SantosVicente&layout=compact&theme=radical" />
+</a>
 	
 <br />
-	
-<div>
-	<img align="center" alt="vs_c" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />    	
-	<img align="center" alt="vs_css" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-        <img align="center" alt="vs_html" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-        <img align="center" alt="vs_js" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-        <img align="center" alt="vs_python" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
-        <img align="center" alt="vs_react" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-	<img align="center" alt="vs_nodejs" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-</div>
 
 <br />
 <hr />
