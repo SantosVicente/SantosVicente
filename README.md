@@ -1,4 +1,4 @@
-## Hi There 👋
+# Hi There 👋
 
 My name is Vicente Santos. I'm a IT student at IFSP (Federal Institute of Education, Science and Technology of São Paulo) from Campinas-SP. I'm a front-end developer slowly trying to become full-stack.
 
@@ -8,12 +8,22 @@ My name is Vicente Santos. I'm a IT student at IFSP (Federal Institute of Educat
 
 <br />
 
+## Github Stats
+
 <a href="https://beacons.ai/santosvicente">
 	<img height="180em" src="https://github-readme-stats.vercel.app/api?username=SantosVicente&show_icons=true&theme=radical&rank_icon=github" />	
 	<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SantosVicente&layout=compact&theme=radical" />
 </a>
 	
 <br />
+
+## Most Used Tech's
+- JavaScript / TypeScript
+- React.js (Next.js/Vite.js)
+- Node.js
+- MongoDB / MySQL / Prisma ORM
+- Java (SpringBoot)
+- C
 
 <br />
 <hr />
