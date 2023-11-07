@@ -11,8 +11,10 @@ My name is Vicente Santos. I'm a IT student at IFSP (Federal Institute of Educat
 ## Github Stats
 
 <div align="center">
-	<img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=SantosVicente&show_icons=true&theme=radical&rank_icon=github" />	
-  	<img width="37%" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SantosVicente&layout=compact&theme=radical" />
+	<a href="https://beacons.ai/SantosVicente">
+		<img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=SantosVicente&show_icons=true&theme=radical&rank_icon=github" />	
+  		<img width="37%" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SantosVicente&layout=compact&theme=radical" />
+	</a>
 </div>
 
 <br />
