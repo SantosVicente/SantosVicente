@@ -1,12 +1,19 @@
 # Hi There 👋
 
-My name is Vicente Santos. I'm a IT student at IFSP (Federal Institute of Education, Science and Technology of São Paulo) from Campinas-SP. I'm a front-end developer slowly trying to become full-stack.
+My name is Vicente Santos. I am Currently a Frontend Developer and a computing student at IFSP Campus Campinas, working as an intern at INOVIA. I am a programming enthusiast who consistently seeks new knowledge and is currently striving to transition into a Full Stack Developer.
 
 <div>
 	<img width="100%" src="https://media.discordapp.net/attachments/1112939231061495869/1205266623746023454/vicente_santos.png?ex=65d7bf03&is=65c54a03&hm=5e7127031f7ec4e1b171d9d91ef60fd72f54fb4f2d07a4b43c889170e1040d0d&=&format=webp&quality=lossless&width=1439&height=259" />
 </div>
 
 <br />
+
+
+My current technological expertise is focused on web development, including ReactJS, NodeJS, and its ecosystem of libraries and frameworks, ranging from older ones like Redux and Material UI to more recent ones like Shadcn UI, Tailwind, and others. In the mobile domain, I have knowledge in React Native.
+
+In 2023, I developed the 'Astral Net' project as part of the Integrated Project discipline at IFSP Campus Campinas, an initiative dedicated to presenting knowledge about astronomy in a dynamic and accessible way, primarily targeting a young and non-specialized audience.
+
+From 2023 until today, I have been involved in the development of the 'Platforma BYou' , owned by the company where I am interning.
 
 ## Github Stats
 
@@ -22,10 +29,15 @@ My name is Vicente Santos. I'm a IT student at IFSP (Federal Institute of Educat
 ## Most Used Tech's
 - JavaScript / TypeScript
 - React.js (Next.js/Vite.js)
+- React Native
 - Node.js
-- MongoDB / MySQL / Prisma ORM
-- Java (SpringBoot)
+- GoLang
+- SQL / NoSQL / ORM's
+- Java / SpringBoot
+- PHP
+- Docker
 - C
+- Python
 
 <hr />
 
