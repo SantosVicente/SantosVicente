@@ -3,7 +3,7 @@
 My name is Vicente Santos. I'm a IT student at IFSP (Federal Institute of Education, Science and Technology of São Paulo) from Campinas-SP. I'm a front-end developer slowly trying to become full-stack.
 
 <div>
-	<img width="100%" src="https://media.discordapp.net/attachments/1112939231061495869/1169457072539193374/DEVELOPER_FRONT-END.png?ex=655578c5&is=654303c5&hm=a0be2bb7c9f58a319949aa6c04e917e91778fe4e1544b3a1e89b22ffb4ae3a6f&=&width=1133&height=204" />
+	<img width="100%" src="https://media.discordapp.net/attachments/1112939231061495869/1205266623746023454/vicente_santos.png?ex=65d7bf03&is=65c54a03&hm=5e7127031f7ec4e1b171d9d91ef60fd72f54fb4f2d07a4b43c889170e1040d0d&=&format=webp&quality=lossless&width=1439&height=259" />
 </div>
 
 <br />
