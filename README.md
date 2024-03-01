@@ -3,7 +3,7 @@
 My name is Vicente Santos. I am Currently a Frontend Developer and a computing student at IFSP Campus Campinas, working as an intern at INOVIA. I am a programming enthusiast who consistently seeks new knowledge and is currently striving to transition into a Full Stack Developer.
 
 <div>
-	<img width="100%" src="https://media.discordapp.net/attachments/1112939231061495869/1205266623746023454/vicente_santos.png?ex=65d7bf03&is=65c54a03&hm=5e7127031f7ec4e1b171d9d91ef60fd72f54fb4f2d07a4b43c889170e1040d0d&=&format=webp&quality=lossless&width=1439&height=259" />
+	<img width="100%" src="https://github.com/SantosVicente/SantosVicente/assets/101016049/6194e749-9788-4a2e-8e62-2e1836cc43cd" />
 </div>
 
 <br />
