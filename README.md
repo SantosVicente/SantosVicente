@@ -1,6 +1,6 @@
 # Hi There 👋
 
-My name is Vicente Santos. I am Currently a Frontend Developer and a computing student at IFSP Campus Campinas, working as an intern at INOVIA. I am a programming enthusiast who consistently seeks new knowledge and is currently striving to transition into a Full Stack Developer.
+My name is Vicente Santos. I'm a Full-Stack Developer and Computing student at IFSP Campus Campinas. Currently, I work as a Junior Full-Stack Developer at [INOVIA](https://www.inoviacorp.com/), where I actively contribute to the development of digital platforms and systems that impact real users.
 
 <div>
 	<img width="100%" src="https://github.com/SantosVicente/SantosVicente/assets/101016049/6194e749-9788-4a2e-8e62-2e1836cc43cd" />
@@ -8,14 +8,30 @@ My name is Vicente Santos. I am Currently a Frontend Developer and a computing s
 
 <br />
 
+I am passionate about technology and continuous learning. My main expertise lies in web and mobile development, with experience across modern tools and frameworks such as ReactJS, Node.js, React Native, and Tailwind.
 
-My current technological expertise is focused on web development, including ReactJS, NodeJS, and its ecosystem of libraries and frameworks, ranging from older ones like Redux and Material UI to more recent ones like Shadcn UI, Tailwind, and others. In the mobile domain, I have knowledge in React Native.
+### 🛠️ Current Stack
 
-In 2023, I developed the 'Astral Net' project as part of the Integrated Project discipline at IFSP Campus Campinas, an initiative dedicated to presenting knowledge about astronomy in a dynamic and accessible way, primarily targeting a young and non-specialized audience.
+- JavaScript / TypeScript
+- React.js (Next.js, Vite.js, etc...)
+- React Native
+- Node.js / Express
+- GoLang
+- SQL / NoSQL (PostgreSQL, MongoDB) / ORM's (Prisma, Sequelize)
+- Java / Spring Boot
+- PHP
+- Docker
+- C
+- Python
 
-From 2023 until today, I have been involved in the development of the 'Platforma BYou' , owned by the company where I am interning.
+### 🧠 Projects Highlight
+These projects were developed as part of my academic journey at IFSP and my continued professional development.
+- **Astral Net** – An astronomy content platform designed to educate young users in a dynamic and accessible way.
+- **Rettek** – A B2B platform for buying and selling primal food products between micro-vendors and restaurants, connecting suppliers and buyers efficiently.
+- **pHIA (in development)** – A mobile solution using React Native, computer vision and machine learning to detect pH values from indicator strips via image analysis.
 
-## Github Stats
+
+### 📊 GitHub Stats
 
 <div align="center">
 	<a href="https://beacons.ai/SantosVicente">
@@ -26,21 +42,9 @@ From 2023 until today, I have been involved in the development of the 'Platforma
 
 <br />
 
-## Most Used Tech's
-- JavaScript / TypeScript
-- React.js (Next.js/Vite.js)
-- React Native
-- Node.js
-- GoLang
-- SQL / NoSQL / ORM's
-- Java / SpringBoot
-- PHP
-- Docker
-- C
-- Python
-
 <hr />
 
+### 📫 Connect with me
 	
 <div>
 	<a href="mailto:vidosantos45@gmail.com" target="_blank">
