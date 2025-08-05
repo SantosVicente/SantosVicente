@@ -2,10 +2,6 @@
 
 My name is Vicente Santos. I'm a Full-Stack Developer and Computing student at IFSP Campus Campinas. Currently, I work as a Junior Full-Stack Developer at [INOVIA](https://www.inoviacorp.com/), where I actively contribute to the development of digital platforms and systems that impact real users.
 
-<div>
-	<img width="100%" src="https://github.com/SantosVicente/SantosVicente/assets/101016049/6194e749-9788-4a2e-8e62-2e1836cc43cd" />
-</div>
-
 <br />
 
 I am passionate about technology and continuous learning. My main expertise lies in web and mobile development, with experience across modern tools and frameworks such as ReactJS, Node.js, React Native, and Tailwind.
