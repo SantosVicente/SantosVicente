@@ -13,7 +13,7 @@ I am passionate about technology and continuous learning. My main expertise lies
 - React Native
 - Node.js / Express
 - GoLang
-- SQL / NoSQL (PostgreSQL, MongoDB) / ORM's (Prisma, Sequelize)
+- SQL / NoSQL (MongoDB) / ORM's (Prisma, Sequelize)
 - Java / Spring Boot
 - PHP
 - Docker
