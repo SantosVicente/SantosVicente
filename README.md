@@ -1,6 +1,6 @@
 # Hi There 👋
 
-My name is Vicente Santos. I'm a Full-Stack Developer and Computing student at IFSP Campus Campinas. Currently, I work as a Junior Full-Stack Developer at [INOVIA](https://www.inoviacorp.com/), where I actively contribute to the development of digital platforms and systems that impact real users.
+My name is Vicente Santos. I'm a Full-Stack Developer and Computing student at IFSP Campus Campinas. Currently, I work as a Junior Full-Stack Developer at [INOVIA](https://inoviacorp.ai/), where I actively contribute to the development of digital platforms and systems that impact real users.
 
 <br />
 
