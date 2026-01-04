@@ -26,16 +26,6 @@ These projects were developed as part of my academic journey at IFSP and my cont
 - **Rettek** – A B2B platform for buying and selling primal food products between micro-vendors and restaurants, connecting suppliers and buyers efficiently.
 - **pHIA (in development)** – A mobile solution using React Native, computer vision and machine learning to detect pH values from indicator strips via image analysis.
 
-
-### 📊 GitHub Stats
-
-<div align="center">
-	<a href="https://beacons.ai/SantosVicente">
-		<img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=SantosVicente&show_icons=true&theme=radical&rank_icon=github" />	
-  		<img width="37%" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SantosVicente&layout=compact&theme=radical" />
-	</a>
-</div>
-
 <br />
 
 <hr />
