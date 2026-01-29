@@ -15,10 +15,11 @@ I specialize in the JavaScript/TypeScript ecosystem but maintain a strong grasp 
 #### **Frontend & UI**
 
 ![React](https://img.shields.io/badge/-React-45b8d8?style=flat-square&logo=react&logoColor=white)
-![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/-Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
 ![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
-![React Native](https://img.shields.io/badge/-React_Native-61DAFB?style=flat-square&logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
+![React Native](https://img.shields.io/badge/-Mobile_(RN)-61DAFB?style=flat-square&logo=react&logoColor=white)
+![Electron](https://img.shields.io/badge/-Electron_(Desktop)-47848F?style=flat-square&logo=electron&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/-Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
 
 #### **Backend & Database**
 
@@ -35,6 +36,13 @@ I specialize in the JavaScript/TypeScript ecosystem but maintain a strong grasp 
 ![Playwright](https://img.shields.io/badge/-Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
 ![Vitest](https://img.shields.io/badge/-Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white)
 ![Nginx](https://img.shields.io/badge/-Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
+
+#### **Design, Agile & Business Tools**
+
+![Figma](https://img.shields.io/badge/-Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
+![Jira](https://img.shields.io/badge/-Jira-0052CC?style=flat-square&logo=jira&logoColor=white)
+![Scrum](https://img.shields.io/badge/-Scrum-primary?style=flat-square&logo=scrumalliance&logoColor=white)
+![RD Station](https://img.shields.io/badge/-RD_Station_&_CRMs-1998e3?style=flat-square&logo=salesforce&logoColor=white)
 
 ---
 
