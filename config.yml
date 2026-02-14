@@ -1,0 +1,100 @@
+# Galaxy Profile Configuration
+# Customized for Vicente Santos
+
+# Your GitHub username (required)
+username: SantosVicente
+
+# Profile information displayed in the galaxy header
+profile:
+  name: "Vicente Santos"
+  tagline: "Full-Stack Developer & Solutions Engineer"
+  company: "INOVIA"
+  location: "Campinas, Brazil"
+  bio: |
+    Building robust digital platforms with a focus on scalable architecture,
+    automated testing, and seamless CI/CD pipelines.
+  philosophy: '"Engineering complete solutions, not just writing code."'
+
+# Social links displayed at the bottom of the profile
+social:
+  email: "vidosantos45@gmail.com"
+  linkedin: "santosvicente2302"
+  website: "https://santos-vicente-portfolio.vercel.app/"
+
+# Galaxy arms represent your core focus areas
+# Each arm spirals out from the center with its own color and tech items
+# Available colors: "synapse_cyan", "dendrite_violet", "axon_amber"
+galaxy_arms:
+  - name: "Frontend & UI"
+    color: "dendrite_violet"
+    items:
+      - "React"
+      - "Next.js"
+      - "TypeScript"
+      - "React Native"
+      - "Electron"
+      - "Tailwind CSS"
+  - name: "Backend & Data"
+    color: "synapse_cyan"
+    items:
+      - "Node.js"
+      - "Go"
+      - "PostgreSQL"
+      - "MongoDB"
+      - "Prisma"
+  - name: "DevOps & Tools"
+    color: "axon_amber"
+    items:
+      - "Docker"
+      - "GitHub Actions"
+      - "Playwright"
+      - "Vitest"
+      - "Nginx"
+      - "Figma"
+
+# Featured projects shown as constellation stars
+# Each project needs:
+#   repo: "owner/repo-name"   — GitHub repository path
+#   arm: 0-2                  — Which galaxy arm to associate with (index)
+#   description: "..."        — Short description shown on the card
+projects:
+  - repo: "SantosVicente/phia-app"
+    arm: 0
+    description: "Mobile solution using Computer Vision and ML to detect pH values."
+  - repo: "SantosVicente/rettek-frontend"
+    arm: 1
+    description: "B2B marketplace connecting micro-vendors to restaurants."
+  - repo: "SantosVicente/EcoTrack"
+    arm: 2
+    description: "Educational astronomy platform for young students."
+
+# Theme color overrides (optional — defaults to deep space palette)
+# All values must be valid hex color codes (#RRGGBB)
+theme:
+  void: "#0d1117" # GitHub Dark background
+  nebula: "#161b22" # Card backgrounds
+  star_dust: "#30363d" # Borders, dividers
+  synapse_cyan: "#58a6ff" # Primary accent (Blue)
+  dendrite_violet: "#bc8cff" # Secondary accent (Purple)
+  axon_amber: "#d29922" # Tertiary accent (Yellow/Orange)
+  text_bright: "#c9d1d9" # Primary text
+  text_dim: "#8b949e" # Secondary text
+  text_faint: "#484f58" # Muted text, labels
+
+# Stats configuration — which metrics to show on the telemetry card
+stats:
+  metrics:
+    - "commits"
+    - "stars"
+    - "prs"
+    - "issues"
+    - "repos"
+
+# Language display settings
+languages:
+  exclude: # Languages to hide from the telemetry chart
+    - "HTML"
+    - "CSS"
+    - "Shell"
+    - "Makefile"
+  max_display: 8 # Maximum number of languages to show
