@@ -61,12 +61,21 @@ projects:
   - repo: "SantosVicente/phia-app"
     arm: 0
     description: "Mobile solution using Computer Vision and ML to detect pH values."
-  - repo: "SantosVicente/rettek-frontend"
-    arm: 1
-    description: "B2B marketplace connecting micro-vendors to restaurants."
   - repo: "SantosVicente/EcoTrack"
     arm: 2
-    description: "Educational astronomy platform for young students."
+    description: "Plataforma de monitoramento de impacto ambiental em larga escala."
+  - repo: "SantosVicente/citara"
+    arm: 0
+    description: "Cyberpunk landing page prototype with interactive animations."
+  - repo: "SantosVicente/MovieMind"
+    arm: 1
+    description: "AI-powered movie recommender using Gemini API and TMDb."
+  - repo: "SantosVicente/StellarJam"
+    arm: 1
+    description: "Exploratory music streaming SaaS with Next.js and Shadcn UI."
+  - repo: "SantosVicente/AstralNet"
+    arm: 0
+    description: "Gamified web platform to combat astronomy disinformation."
 
 # Theme color overrides (optional — defaults to deep space palette)
 # All values must be valid hex color codes (#RRGGBB)

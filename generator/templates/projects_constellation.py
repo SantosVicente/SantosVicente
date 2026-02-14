@@ -2,10 +2,13 @@
 
 from generator.utils import wrap_text, deterministic_random, esc, resolve_arm_colors
 
-WIDTH, HEIGHT = 850, 220
+WIDTH = 850
+CARD_HEIGHT = 140
+GAP_Y = 30
+ROW_HEIGHT = CARD_HEIGHT + GAP_Y
 
 
-def _build_defs(n, card_width, gap, card_colors, theme):
+def _build_defs_with_pos(n, card_width, card_colors, theme, card_positions):
     """Build all defs (filters, gradients, clip paths, CSS)."""
     defs_parts = []
 
@@ -44,9 +47,9 @@ def _build_defs(n, card_width, gap, card_colors, theme):
 
     # Clip paths per card
     for i in range(n):
-        card_x = gap + i * (card_width + gap)
+        cx, cy = card_positions[i]
         defs_parts.append(f'''    <clipPath id="card-clip-{i}">
-      <rect x="{card_x}" y="55" width="{card_width}" height="140" rx="8" ry="8"/>
+      <rect x="{cx}" y="{cy}" width="{card_width}" height="{CARD_HEIGHT}" rx="8" ry="8"/>
     </clipPath>''')
 
     # CSS keyframes
@@ -128,18 +131,24 @@ def _build_grid_overlay(width, height, theme):
     return "\n".join(grid_lines)
 
 
-def _build_connections(n, card_width, gap):
+def _build_connections_with_pos(n, card_width, card_positions):
     """Build connection lines between cards."""
     conn_lines = []
     if n >= 2:
         for i in range(n - 1):
-            x1 = gap + i * (card_width + gap) + card_width / 2
-            x2 = gap + (i + 1) * (card_width + gap) + card_width / 2
-            conn_lines.append(
-                f'  <line x1="{x1:.1f}" y1="85" x2="{x2:.1f}" y2="85" '
-                f'stroke="url(#conn-grad)" stroke-width="1" '
-                f'stroke-dasharray="6,4" opacity="0.5"/>'
-            )
+             # Only connect if same row
+            row1 = i // 3
+            row2 = (i + 1) // 3
+            if row1 == row2:
+                x1 = card_positions[i][0] + card_width / 2
+                x2 = card_positions[i+1][0] + card_width / 2
+                y = card_positions[i][1] + 30 
+                
+                conn_lines.append(
+                    f'  <line x1="{x1:.1f}" y1="{y}" x2="{x2:.1f}" y2="{y}" '
+                    f'stroke="url(#conn-grad)" stroke-width="1" '
+                    f'stroke-dasharray="6,4" opacity="0.5"/>'
+                )
     return "\n".join(conn_lines)
 
 
@@ -181,9 +190,10 @@ def _build_title_area(n, width, height, theme):
     return "\n".join(title_parts)
 
 
-def _build_project_card(i, proj, arm, color, card_width, card_x, theme):
+def _build_project_card(i, proj, arm, color, card_width, card_x, card_y, theme):
     """Build a single project card."""
     card_cx = card_x + card_width / 2
+    card_cy = card_y + 30 # Center relative to card top (55 -> 85)
     repo_name = proj["repo"].split("/")[-1] if "/" in proj["repo"] else proj["repo"]
     desc = proj.get("description", "")
     # Wrap description to fit card width (approx chars)
@@ -197,26 +207,26 @@ def _build_project_card(i, proj, arm, color, card_width, card_x, theme):
 
     # Card container
     card_parts.append(
-        f'    <rect x="{card_x}" y="55" width="{card_width}" height="140" rx="8" ry="8" '
+        f'    <rect x="{card_x}" y="{card_y}" width="{card_width}" height="{CARD_HEIGHT}" rx="8" ry="8" '
         f'fill="url(#card-bg-{i})" stroke="{theme["star_dust"]}" stroke-width="1"/>'
     )
 
     # Nebula wisps (clipped inside card)
     card_parts.append(f'    <g clip-path="url(#card-clip-{i})">')
     card_parts.append(
-        f'      <circle cx="{card_x + card_width * 0.3}" cy="90" r="50" '
+        f'      <circle cx="{card_x + card_width * 0.3}" cy="{card_y + 35}" r="50" '
         f'fill="{color}" opacity="0.025" filter="url(#card-nebula)"/>'
     )
     card_parts.append(
-        f'      <circle cx="{card_x + card_width * 0.7}" cy="150" r="40" '
+        f'      <circle cx="{card_x + card_width * 0.7}" cy="{card_y + 95}" r="40" '
         f'fill="{color}" opacity="0.03" filter="url(#card-nebula)"/>'
     )
     # Scan line inside card
     card_parts.append(
-        f'      <rect x="{card_x}" y="55" width="{card_width}" height="2" '
+        f'      <rect x="{card_x}" y="{card_y}" width="{card_width}" height="2" '
         f'fill="{color}" opacity="0.1">'
         f'<animateTransform attributeName="transform" type="translate" '
-        f'from="0 0" to="0 140" dur="6s" repeatCount="indefinite"/>'
+        f'from="0 0" to="0 {CARD_HEIGHT}" dur="6s" repeatCount="indefinite"/>'
         f'</rect>'
     )
     card_parts.append('    </g>')
@@ -224,20 +234,20 @@ def _build_project_card(i, proj, arm, color, card_width, card_x, theme):
     # Star indicator — orbital ring + glow + core + center
     # Orbital ring (rotating dashed circle)
     card_parts.append(
-        f'    <circle cx="{card_cx}" cy="85" r="14" fill="none" '
+        f'    <circle cx="{card_cx}" cy="{card_cy}" r="14" fill="none" '
         f'stroke="{color}" stroke-width="0.8" stroke-dasharray="4,3" opacity="0.5">'
         f'<animateTransform attributeName="transform" type="rotate" '
-        f'from="0 {card_cx} 85" to="360 {card_cx} 85" dur="12s" repeatCount="indefinite"/>'
+        f'from="0 {card_cx} {card_cy}" to="360 {card_cx} {card_cy}" dur="12s" repeatCount="indefinite"/>'
         f'</circle>'
     )
     # Glow halo
     card_parts.append(
-        f'    <circle cx="{card_cx}" cy="85" r="8" fill="{color}" '
+        f'    <circle cx="{card_cx}" cy="{card_cy}" r="8" fill="{color}" '
         f'opacity="0.15" filter="url(#proj-glow-{i})"/>'
     )
     # Pulsing core
     card_parts.append(
-        f'    <circle cx="{card_cx}" cy="85" r="5" fill="{color}" opacity="0.7">'
+        f'    <circle cx="{card_cx}" cy="{card_cy}" r="5" fill="{color}" opacity="0.7">'
         f'<animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" '
         f'begin="{delay}" repeatCount="indefinite"/>'
         f'<animate attributeName="r" values="4.5;5.5;4.5" dur="3s" '
@@ -246,19 +256,19 @@ def _build_project_card(i, proj, arm, color, card_width, card_x, theme):
     )
     # White center dot
     card_parts.append(
-        f'    <circle cx="{card_cx}" cy="85" r="2" fill="#ffffff" opacity="0.9"/>'
+        f'    <circle cx="{card_cx}" cy="{card_cy}" r="2" fill="#ffffff" opacity="0.9"/>'
     )
 
     # Project name (centered)
     card_parts.append(
-        f'    <text x="{card_cx}" y="111" fill="{theme["text_bright"]}" '
+        f'    <text x="{card_cx}" y="{card_y + 56}" fill="{theme["text_bright"]}" '
         f'font-size="14" font-weight="bold" font-family="sans-serif" '
         f'text-anchor="middle">{esc(repo_name)}</text>'
     )
 
     # Description lines (centered)
     for j, line in enumerate(desc_lines[:2]):
-        y_pos = 129 + j * 15
+        y_pos = card_y + 74 + j * 15
         card_parts.append(
             f'    <text x="{card_cx}" y="{y_pos}" fill="{theme["text_dim"]}" '
             f'font-size="11" font-family="sans-serif" '
@@ -270,11 +280,11 @@ def _build_project_card(i, proj, arm, color, card_width, card_x, theme):
     tag_width = len(tag_text) * 7 + 16
     tag_x = card_cx - tag_width / 2
     card_parts.append(
-        f'    <rect x="{tag_x}" y="163" width="{tag_width}" height="18" rx="9" ry="9" '
+        f'    <rect x="{tag_x}" y="{card_y + 108}" width="{tag_width}" height="18" rx="9" ry="9" '
         f'fill="{color}" opacity="0.12"/>'
     )
     card_parts.append(
-        f'    <text x="{card_cx}" y="175" fill="{color}" '
+        f'    <text x="{card_cx}" y="{card_y + 120}" fill="{color}" '
         f'font-size="9" font-family="monospace" text-anchor="middle" '
         f'opacity="0.85">{esc(tag_text)}</text>'
     )
@@ -305,10 +315,11 @@ def render(projects: list, galaxy_arms: list, theme: dict) -> str:
     """
     all_arm_colors = resolve_arm_colors(galaxy_arms, theme)
 
-    n = min(len(projects), 3)
-
+    n = min(len(projects), 6)
+    
     if n == 0:
         # No projects — render an empty card
+        HEIGHT = 220
         return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}">
   <rect x="0.5" y="0.5" width="{WIDTH - 1}" height="{HEIGHT - 1}" rx="12" ry="12"
         fill="{theme['nebula']}" stroke="{theme['star_dust']}" stroke-width="1"/>
@@ -316,13 +327,27 @@ def render(projects: list, galaxy_arms: list, theme: dict) -> str:
         font-family="monospace" text-anchor="middle" dominant-baseline="middle">No featured projects configured</text>
 </svg>'''
 
-    # Adaptive card sizing
+    # Layout calculation
+    rows = (n + 2) // 3
+    HEIGHT = 80 + (rows * ROW_HEIGHT) # Header + rows
+    
+    # Grid configuration
+    cols_per_row = 3
+    if n == 2:
+        cols_per_row = 2
+    if n == 4:
+         # Special case for 4 items: 2 rows of 2? Or 3 then 1?
+         # Let's stick to max 3 per row.
+         pass
+
+    card_width = 240
     if n == 2:
         card_width = 340
-    else:
-        card_width = 240
-    total_cards_width = card_width * n
-    gap = (WIDTH - total_cards_width) / (n + 1)
+        
+    # Calculate gaps based on max columns possible
+    max_cols = min(n, 3)
+    total_cards_width = card_width * max_cols
+    gap_x = (WIDTH - total_cards_width) / (max_cols + 1)
 
     # Resolve arm indices and colors per card
     card_arms = []
@@ -335,7 +360,39 @@ def render(projects: list, galaxy_arms: list, theme: dict) -> str:
         card_colors.append(all_arm_colors[arm_idx])
 
     # ── Layer 0: Defs ──
-    defs_str = _build_defs(n, card_width, gap, card_colors, theme)
+    # We need to construct card positions for clip paths
+    card_positions = []
+    for i in range(n):
+        row = i // 3
+        col = i % 3
+        # Center the row if it has fewer items? 
+        # For simplicity, let's left-align or center?
+        # Original was centered.
+        
+        items_in_this_row = 3
+        if row == rows - 1 and n % 3 != 0:
+            items_in_this_row = n % 3
+            
+        # Re-calculate gap for this specific row if we want per-row centering
+        # simplified: strict grid
+        current_row_gap = gap_x
+        
+        # X Position
+        card_x = gap_x + col * (card_width + gap_x)
+        
+        # Vertical centering adjustment for the last row if simpler?
+        # No, let's stick to a strict grid for now to be safe.
+        
+        # Y Position
+        card_y = 55 + row * ROW_HEIGHT
+        
+        card_positions.append((card_x, card_y))
+
+    # Re-implement _build_defs locally or modify it to accept positions?
+    # Let's inject the clip path logic here directly or patch the function.
+    # To cause minimal churn, let's redefine _build_defs to take positions
+    
+    defs_str = _build_defs_with_pos(n, card_width, card_colors, theme, card_positions)
 
     # ── Layer 1: Background rect ──
     bg = (
@@ -351,7 +408,7 @@ def render(projects: list, galaxy_arms: list, theme: dict) -> str:
     grid_str = _build_grid_overlay(WIDTH, HEIGHT, theme)
 
     # ── Layer 4: Connection lines between cards ──
-    conn_str = _build_connections(n, card_width, gap)
+    conn_str = _build_connections_with_pos(n, card_width, card_positions)
 
     # ── Layer 5: Title area ──
     title_str = _build_title_area(n, WIDTH, HEIGHT, theme)
@@ -362,9 +419,9 @@ def render(projects: list, galaxy_arms: list, theme: dict) -> str:
         proj = projects[i]
         arm = galaxy_arms[card_arms[i]]
         color = card_colors[i]
-        card_x = gap + i * (card_width + gap)
+        cx, cy = card_positions[i]
 
-        cards.append(_build_project_card(i, proj, arm, color, card_width, card_x, theme))
+        cards.append(_build_project_card(i, proj, arm, color, card_width, cx, cy, theme))
 
     cards_str = "\n".join(cards)
 
